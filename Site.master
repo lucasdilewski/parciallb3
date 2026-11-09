@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asesoría Legal Global</title>
+  <link href="Site.css" rel="stylesheet" />
+  <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+<form id="form1" runat="server">
+  <header class="navbar">
+    <a class="brand" href="Default.aspx">&#9878; Asesoría Legal Global</a>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="burger">☰</label>
+    <nav>
+      <a href="Default.aspx">Inicio</a>
+      <a href="Register.aspx" id="lnkRegister" runat="server">Registro</a>
+      <a href="Login.aspx" id="lnkLogin" runat="server">Iniciar sesión</a>
+      <a href="Files.aspx" id="lnkFiles" runat="server">Mis documentos</a>
+      <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" CausesValidation="false">Salir</asp:LinkButton>
+    </nav>
+  </header>
+  <main class="container">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+  </main>
+  <footer class="footer">
+    <img src="Images/logo_2.png" alt="Assecoria Legal" />
+    <span>&copy; <%: DateTime.Now.Year %> Asesoría Legal Global. Todos los derechos reservados.</span>
+  </footer>
+</form>
+</body>
+</html>
