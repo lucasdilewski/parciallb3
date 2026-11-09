@@ -1,5 +1,0 @@
-﻿Asesoría Legal Global - ASP.NET Web Forms (C#, .NET Framework 4.8)
-1. Visual Studio > Archivo > Abrir > Sitio web... > seleccionar esta carpeta.
-2. Ejecutar con IIS Express (F5).
-Páginas: Default, Register, Login, Files. Master Page: Site.master (+ Site.css).
-Usuarios: App_Data/users.txt (contraseñas con PBKDF2). Archivos: Uploads/<usuario>/ (acceso web directo bloqueado).
